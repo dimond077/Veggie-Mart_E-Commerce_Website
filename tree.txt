@@ -1,0 +1,10 @@
+this is the tree of my project called VeggieMart
+1. create header file 
+    create container: for nevigation bar, logo, account, cart, title,etc
+        create new bar for uploding a logo
+        create a menu bar for shortcut inportant link access
+            home page, product's, account, about, cart 
+    creaat a new row 
+
+
+now i show you how i want my cart work first i send  you one demo project then i send you all my html css  file then you help  me to create a js file for it

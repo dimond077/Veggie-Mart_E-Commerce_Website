@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@700&display=swap');
+
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Alkatra', cursive;
+}
+
+/* Header styles */
+header {
+    background-color: #fff;
+    height: 80px;
+    border-bottom: 1px solid #e6e6e6;    
+}
+
+body {
+    margin: 0;
+    padding: 0;  
+    background: radial-gradient(#fff, #ffd6d6);
+    font-family: Arial, sans-serif;
+  }
+  
+.container {
+    width: 90%;
+    margin: auto;
+    max-width: 1200px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 70px;
+    padding-top: 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a {
+    display: block;
+    padding: 0 20px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff5500; 
+}
+
+nav ul li a.active {
+    color: #ff5500;
+}
+
+.menu-icon {
+    height: 30px;
+    display: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 960px) {
+    .menu-icon {
+        display: block;
+    }
+    nav ul {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 80px);
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        transition: all 0.5s ease;
+}
+nav ul li {
+    width: 100%;
+    text-align: center;
+}
+/* IT'S JUST PART 1 OF ABOUT.CSS WAIT FOR ALL PART */
+nav ul li a {
+    padding: 15px;
+}
+nav ul li a.active {
+    background-color: #ff5500;
+    color: #fff;
+}
+nav ul.show {
+    left: 0;
+}
+}
+
+
+/* About section styles */
+.about-section {
+    padding: 100px 0;
+    background: radial-gradient(#fff, #ffd6dc);
+}
+
+.about-section h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.about-section .btn {
+    display: inline-block;
+    background-color: #ff5500;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.about-section .btn:hover {
+    background-color: #fff;
+    color: #ff5500;
+}
+
+.about-section .col-2 {
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.about-section img {
+    max-width: 100%;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 60px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col-3 {
+    flex-basis: 30%;
+    padding: 20px;
+}
+
+.col-3 h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.col-3 ul {
+    list-style: none;
+    line-height: 2;
+}  
+.col-3 h1 {
+    margin-bottom: 30px;
+}
+
+.col-3 a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.col-3 a:hover {
+    color: #8f8f8f;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.col-1 {
+    flex: 25%;
+    padding: 0 16px;
+}
+
+.col-2 {
+    flex: 50%;
+    padding: 0 16px;
+}
+
+.col-3 {
+    flex: 25%;
+    padding: 0 16px;
+}
+
+@media screen and (max-width: 700px) {
+    .row {
+        display: block;
+    }
+
+    .col-1, .col-2, .col-3 {
+        flex: 100%;
+        padding: 0;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    nav ul {
+        position: absolute;
+        top: 80px;
+        left: -100%;
+        background: #333;
+        height: calc(100vh - 80px);
+        width: 100%;
+        transition: all 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+    }
+
+    nav ul li a {
+        display: block;
+        font-size: 20px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    /* IT'S JUST PART 2 OF ABOUT.CSS WAIT FOR ALL PART */
+    nav ul li a:hover {
+        background: #8f8f8f;
+    }
+
+    
+    .showing {
+        left: 0;
+    }
+}
+
+.subscribe-btn {
+    background-color: hsl(34, 100%, 62%);
+    color: #000000;
+    font-size: 15px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.subscribe-btn:hover {
+    background-color: #ffffff;
+    color: black;
+}
+
+footer form input[type="email"] {
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    width: 70%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+

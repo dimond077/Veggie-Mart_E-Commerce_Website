@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login | VeggieMart</title>    
+    <link rel="stylesheet" href="login.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <a href="index.html">
+              <img src="https://i.ibb.co/zxcR00c/logo-no-background.png" alt="VeggieMart logo" width="125px">
+            </a>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="index.html">Products</a></li>
+              <li><a href="https://forms.gle/PK2qkJKxseGszESP6" target="_blank">Contact</a></li>
+              <li><a href="login.html" class="active">Account</a></li>
+            </ul>
+          </nav>
+          <a href="cart.html">
+            <img src="https://i.ibb.co/FVc2RRj/cart.png" alt="cart" width="30px">
+          </a>
+          <img src="images/menu.png" alt="Menu" class="menu-icon" onclick="toggleMenu()">
+        </div>
+      </div>
+    </header>
+    <div class="login-container">
+      <h1>Login</h1>
+      <form>
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required>
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required>
+
+          <a href="cart.html"><button type="submit">submit</button></a>
+      </form>
+  </div>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <h1>Useful Links</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">ALL postt</a></li>
+                <li><a href="https://gaminglegend077.blogspot.com/">Gaming</a></li>
+                <li><a href="https://t.me/+Oy0057siObhkNzY1">Join Telegram</a></li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <h1>Follow Us</h1>
+            <ul>
+              <li><a href="https://www.facebook.com/profile.php?id=100040313543868" target="_blank">Facebook</a></li>            
+              <li><a href="https://gaminglegend077.blogspot.com/" target="_blank">Gaming page</a></li>
+              <li><a href="https://www.instagram.com/j_a_y_e_s_h___patil07/">Instagram</a></li>
+              <li><a href="https://www.youtube.com/@pjgaming8135" target="_blank">YouTube</a></li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <h1>Contact Us</h1>
+            <ul>
+              <li><a href="https://forms.gle/PK2qkJKxseGszESP6">fill the form</a>
+              </ul>
+              <form action="https://forms.gle/PK2qkJKxseGszESP6" target="_blank" class="newsletter-form">
+                <input type="email" placeholder="Your email address">
+                <button class="subscribe-btn">Subscribe</button>
+              </form>
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-12">
+              <p>&copy; 2023 Veggie Mart. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+    </footer>
+    <script src="login.js"></script>
+  </body>
+</html>

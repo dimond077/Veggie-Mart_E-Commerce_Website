@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="payment.css">
+</head>
+<body>
+  <header>
+    <div class="headerr">
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html">
+            <img src="https://i.ibb.co/zxcR00c/logo-no-background.png" alt="VeggieMart logo" width="125px">
+          </a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="index.html">Products</a></li>
+            <li><a href="https://forms.gle/PK2qkJKxseGszESP6" target="_blank">Contact</a></li>
+            <li><a href="login.html">Account</a></li>
+          </ul>
+        </nav>
+        <a href="cart.html">
+          <img src="https://i.ibb.co/FVc2RRj/cart.png" alt="cart" width="30px">
+        </a>
+        <img src="images/menu.png" alt="Menu" class="menu-icon" onclick="toggleMenu()">
+      </div>
+    </div>
+  </header>
+  
+  <h2>Payment</h2>
+
+<p class="sentance">Thank you for shopping at Veggie Mart! To complete your purchase, please follow the steps below:</p>
+
+  <div class="row">
+    <div class="col-75">
+      <div class="container">
+        <form action="/action_page.php">
+          <div class="row">
+            <div class="col-50">
+              <h3>Billing Address</h3>
+              <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+              <br>
+              <input type="text" id="fname" name="firstname" placeholder="Jayesh patil">
+              <br>
+              <label for="email"><i class="fa fa-envelope"></i> Email</label>
+              <input type="text" id="email" name="email" placeholder="jayeshpatil9637@gmail.com">
+              <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+              <input type="text" id="adr" name="address" placeholder="105 - building">
+              <label for="city"><i class="fa fa-institution"></i> City</label>
+              <input type="text" id="city" name="city" placeholder="pune">
+              <div class="row">
+                <div class="col-50">
+                  <label for="state">State</label>
+                  <input type="text" id="state" name="state" placeholder="maharastra">
+                </div>
+                <div class="col-50">
+                  <label for="zip">Zip</label>
+                  <input type="text" id="zip" name="zip" placeholder="411019">
+                </div>
+              </div>
+            </div>
+            <div class="col-50">
+              <h3>Payment</h3>
+              <label for="fname">Accepted Cards</label>
+              <div class="icon-container">
+                <i class="fa fa-cc-visa" style="color:navy;"></i>
+                <i class="fa fa-cc-amex" style="color:blue;"></i>
+                <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                <i class="fa fa-cc-discover" style="color:orange;"></i>
+              </div>
+              <label for="cname">Name on Card</label>
+              <input type="text" id="cname" name="cardname" placeholder="Jayesh patil">
+              <label for="ccnum">Credit card number</label>
+              <input type="number" maxlength="16" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+              <label for="expmonth">Exp Month</label>
+              <input type="text" id="expmonth" name="expmonth" placeholder="September">
+              <div class="row">
+                <div class="col-50">
+                  <label for="expyear">Exp Year</label>
+                  <input type="text" id="expyear" name="expyear" placeholder="2018">
+                </div>
+                <div class="col-50">
+                  <label for="cvv">CVV</label>
+                  <input type="text" id="cvv" name="cvv" placeholder="352">
+                </div>
+              </div>
+            </div>
+          </div>
+          <label>
+            Shipping address same as billing<input type="checkbox" class="row" checked="checked" name="sameadr"> 
+          </label>
+          <br>
+          <button" class="btn"><a href="https://youtu.be/dQw4w9WgXcQ">submit</a></button>
+        </form>
+      </div>
+    </div>    
+  </div>
+  
+<footer>
+  <div class="footerr">
+    <div class="row">
+      <div class="col-3">
+        <h1>Useful Links</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">ALL postt</a></li>
+            <li><a href="https://gaminglegend077.blogspot.com/">Gaming</a></li>
+            <li><a href="https://t.me/+Oy0057siObhkNzY1">Join Telegram</a></li>
+        </ul>
+      </div>
+      <div class="col-3">
+        <h1>Follow Us</h1>
+        <ul>
+          <li><a href="https://www.facebook.com/profile.php?id=100040313543868" target="_blank">Facebook</a></li>            
+          <li><a href="https://gaminglegend077.blogspot.com/" target="_blank">Gaming page</a></li>
+          <li><a href="https://www.instagram.com/j_a_y_e_s_h___patil07/">Instagram</a></li>
+          <li><a href="https://www.youtube.com/@pjgaming8135" target="_blank">YouTube</a></li>
+        </ul>
+      </div>
+      <div class="col-3">
+        <h1>Contact Us</h1>
+        <ul>
+          <li><a href="https://forms.gle/PK2qkJKxseGszESP6">fill the form</a>
+          </ul>
+          <form action="https://forms.gle/PK2qkJKxseGszESP6" target="_blank" class="newsletter-form">
+            <input type="email" placeholder="Your email address">
+            <button class="subscribe-btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-12">
+          <p>&copy; 2023 Veggie Mart. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+</footer>
+<script src="payment.js"></script>
+</body>
+</html>
